@@ -16,7 +16,7 @@ const tuesday = dayOfTheWeek("tuesday")
 console.log(tuesday)
 
 
-//-----------------------------
+//-------declarative----------------------
 
 
 function dayOfTheWeek(day) {
@@ -28,8 +28,7 @@ const wednesday = dayOfTheWeek("wednesday")
 
 console.log(wednesday)
 
-//-----------------------------------------
-
+//--------- declarative--------------------------------
 
 
 function monthOfTheYear(month) {
@@ -40,3 +39,12 @@ function monthOfTheYear(month) {
 const november = monthOfTheYear("november")
 
 console.log(november)
+
+//---A function expression---------------
+
+const monthOfTheYear = function (month) {
+    return `The month is ${month} `
+}
+
+const november5 = monthOfTheYear("november")
+console.log(november5)

@@ -1,5 +1,5 @@
 "use strict";
-/*Strict Mode Lecture*/
+/*Strict Mode Lecture
 
 //Always enable strict mode going forward
 
@@ -47,7 +47,7 @@ const num = Number("23");
 
 
 
-//Function Declaration 
+//Function Declaration
 
 function calcAge1(birthYear) {
     return 2037 - birthYear;
@@ -110,8 +110,25 @@ function fruitProcessor(apples, oranges) {
 console.log(fruitProcessor(2, 3));
 
 
+*/
 
 
 
+// const calcAge = function(birthYear){
+//     return 2037 - birthYear;
+// }
 
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//     const age = calcAge(birthYear);
+//     const retirement = 65 - age;
+//     // return retirement;
+//     return `${firstName} retires in ${retirement} years`
+// }
+// yearsUntilRetirement(1991, "ZIdane")
 
+const monthOfTheYear = function (month) {
+    return `The month is ${month} `
+}
+
+const november = monthOfTheYear("november")
+console.log(november)
