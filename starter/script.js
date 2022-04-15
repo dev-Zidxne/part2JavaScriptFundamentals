@@ -1,5 +1,5 @@
 "use strict";
-/*Strict Mode Lecture
+/*Strict Mode Lecture*/
 
 //Always enable strict mode going forward
 
@@ -45,33 +45,49 @@ console.log(appleOrangeJuice);
 
 const num = Number("23");
 
-*/
+
 
 //Function Declaration 
 
-// function calcAge1(birthYear) {
-//     return 2037 - birthYear;
-// }
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
 
-// const age1 = calcAge1(1991);
+const age1 = calcAge1(1991);
 
-// //Function Expressions
+//Function Expressions
 
-// const calcAge2 = function (birthYear) {
-//     return 2037 - birthYear;
-// }
-// const age2 = calcAge2(1991);
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+const age2 = calcAge2(1991);
 
-// console.log(age1, age2);
+console.log(age1, age2);
 
-// function dayOfTheWeek(day) {
-//     const monday = `The day is ${day}`;
-//     return monday;
+function dayOfTheWeek(day) {
+    const monday = `The day is ${day}`;
+    return monday;
 
-// }
+}
 
 
 
+//Arrow Function
+
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991)
+
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years`
+}
+
+console.log(yearsUntilRetirement(1991, "Zidane"));
+console.log(yearsUntilRetirement(1976, "Chris"));
 
 
 
