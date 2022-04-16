@@ -1,5 +1,5 @@
 "use strict";
-/*Strict Mode Lecture
+/*Strict Mode Lecture*/
 
 //Always enable strict mode going forward
 
@@ -110,25 +110,77 @@ function fruitProcessor(apples, oranges) {
 console.log(fruitProcessor(2, 3));
 
 
-*/
 
 
 
-// const calcAge = function(birthYear){
-//     return 2037 - birthYear;
-// }
 
-// const yearsUntilRetirement = function (birthYear, firstName) {
-//     const age = calcAge(birthYear);
-//     const retirement = 65 - age;
-//     // return retirement;
-//     return `${firstName} retires in ${retirement} years`
-// }
-// yearsUntilRetirement(1991, "ZIdane")
-
-const monthOfTheYear = function (month) {
-    return `The month is ${month} `
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
 }
 
-const november = monthOfTheYear("november")
-console.log(november)
+const yearsUntilRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    } else {
+        console.log(`${firstName} has already retired`)
+        return -1;
+    }
+
+}
+
+// return `${firstName} retires in ${retirement} years`
+
+
+
+console.log(yearsUntilRetirement(1991, "Zidane"))
+
+console.log(yearsUntilRetirement(1950, "Chris"))
+
+
+
+//My Answer to code function challenge
+
+
+const calcAverage = scores => scores / 3
+let dolphinsAverage = calcAverage(44 + 23 + 71)
+let koalasAverage = calcAverage(65 + 54 + 49)
+console.log("", dolphinsAverage, '\n', koalasAverage)
+
+function checkWinner(dolphinsAverage, koalasAverage) {
+    if (koalasAverage > 2 * dolphinsAverage)
+        return `Koalas win (${koalasAverage} vs ${dolphinsAverage})`
+    else if (dolphinsAverage > 2 * koalasAverage)
+        return `Dolphins win (${dolphinsAverage} vs ${koalasAverage})`
+    else return `No one wins`
+}
+
+console.log(checkWinner(dolphinsAverage, koalasAverage))
+
+
+
+//Lecture's code
+
+//Note: Lecturer did not use return to output string instead he used the console.log output. He also made his Arrow function with a + b + c to have the values added with the fucntion without need to put a (+) symbol between each like I did.
+
+
+const calcAverage = (a, b, c) => (a + b + c) / 3
+
+let scoreDolphins = calcAverage(44, 23, 71)
+let scoreKoalas = calcAverage(65, 54, 49)
+console.log("", scoreDolphins, '\n', scoreKoalas);
+
+function checkWinner(dolphinsAverage, koalasAverage) {
+    if (koalasAverage > 2 * dolphinsAverage)
+        console.logI(`Koalas win (${koalasAverage} vs ${dolphinsAverage})`)
+    else if (dolphinsAverage > 2 * koalasAverage)
+        console.log(`Dolphins win (${dolphinsAverage} vs ${koalasAverage})`)
+    else console.log(`No one wins`)
+}
+
+checkWinner(scoreDolphins, scoreKoalas)
+
+
