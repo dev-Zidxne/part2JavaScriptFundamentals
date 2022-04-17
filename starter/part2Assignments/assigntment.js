@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // //JavaScript Fundamentals – Part 2
 
@@ -60,7 +60,7 @@
 
 
 // const percentageOfWorld1 = function (population) {
-//     return `Your country's population is ${population / 7900 * 100}% of the world population. ` // string can be added to functions using template literal 
+//     return (population / 7900 * 100)
 // }
 // const percentage1 = percentageOfWorld1(3)
 
@@ -90,23 +90,17 @@
 // 3. Call 'describePopulation' with data for 3 countries of your choice*/
 
 
-// // Tried and failed so far :(
+// // 
 
-// const percentageOfWorld1 = function (population) {
-//     return population / 7900 * 100
+// const describePopulation = function (country, population) {
+//     const percentage = percentageOfWorld1(population)
+//     const description = `${country} has ${population} million people, which is ${percentage}% of the world`
+//     console.log(description)
 // }
 
-
-
-// function describePopulation(country, population) {
-
-//     const population = percentageOfWorld1(population)
-
-//     return `${country} has 1441 million people,which is about 18.2% of the world.`
-// }
-
-// console.log(describePopulation("jamaica", 3))
-
+// describePopulation("Jamaica", 3)
+// describePopulation("USA", 300)
+// describePopulation("China", 1000)
 
 
 
