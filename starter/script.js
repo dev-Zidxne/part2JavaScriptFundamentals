@@ -1,5 +1,5 @@
 "use strict";
-/*Strict Mode Lecture*/
+/*Strict Mode Lecture
 
 //Always enable strict mode going forward
 
@@ -295,24 +295,64 @@ console.log(bills, tips, totals)
 
 
 
+//Intro to Objects
+const zidane = {
+    firstName: "Zidane",
+    lastNAme: "Innis",
+    age: 2037 - 2001,
+    job: " programmer",
+    friends: ["Michael", "Peter", "Steven"]
+
+};
+
+
+console.log(zidane)
+*/
+
+
+const zidane = {
+    firstName: "Zidane",
+    lastName: "Innis",
+    age: 2037 - 2001,
+    job: "programmer",
+    friends: ["Michael", "Peter", "Steven"]
+
+}
 
 
 
+console.log(zidane)
+
+console.log(zidane.lastName);
+console.log(zidane["lastName"])
+
+const nameKey = "Name"
+console.log(zidane["first" + nameKey])
+console.log(zidane["last" + nameKey])
+
+// console.log(zidane."last" + nameKey)
+
+const interestedIn = prompt("What do you want to know about Zidane? Choose between firstName, lastName, age, job, and friends")
+
+
+if (zidane[interestedIn]) {
+    console.log(zidane[interestedIn])
+} else {
+    console.log("Wrong Request! Choose between firstName, lastName, age, job, and friends")
+}
+
+
+zidane.location = "Jamaica";
+zidane["instagram"] = "@zidxne_"
+console.log(zidane);
+
+
+//Challenge
+
+console.log(`${zidane.firstName} has ${zidane.friends.length} friends, and his best friend is called ${zidane.friends[0]}`)
 
 
 
-
-
-
-// function calcTip(bill) {
-//     return bill >= 50 && bill <= 300 ? bill > 300 * 15 / 100 : bill * 20 / 100;
-// }
-
-// const bills = [125, 555, 44]
-
-// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
-
-// console.log(bills, tips)
 
 
 
