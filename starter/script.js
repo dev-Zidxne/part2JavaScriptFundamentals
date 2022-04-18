@@ -211,6 +211,7 @@ console.log(friends)
 
 //friends = ["Bob", "Alice"]//
 
+
 const firstName = "Zidane";
 
 const zidane = [firstName, "Innis", 2037 - 2001, "teacher", friends];
@@ -223,15 +224,96 @@ const calcAge = function (birthYear) {
 
 const years = [1990, 1967, 2002, 2010, 2018]
 
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
+const age1 = calcAge(years[0])
+const age2 = calcAge(years[1])
+const age3 = calcAge(years[years.length - 1])
+console.log(age1, age2, age3)
 
-console.log(age1, age2, age3);
 
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])]
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 
 console.log(ages)
+
+
+
+
+//Add Elements
+
+const friends = ["Michael", "Steven", "Peter"]
+const newLength = friends.push("Jay")
+console.log(friends)
+
+console.log(newLength)
+
+friends.unshift("Zidane")
+console.log(friends)
+
+
+
+
+//Remove Elements
+
+friends.pop(); //Last
+const popped = friends.pop();
+console.log(popped);
+console.log(friends)
+
+
+friends.shift()
+console.log(friends)
+
+console.log(friends.indexOf("Steven"))
+console.log(friends.indexOf("Bob"))// returns -1 because there is no "Bob" in the array
+
+
+friends.push(23)
+console.log(friends.includes("Steven"))
+console.log(friends.includes("Bob"))
+console.log(friends.includes(23)) //checks for strick equality (===)
+
+if (friends.includes("Steven")) {
+    console.log("You have a friend called Steven")
+}
+
+
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+
+
+const bills = [125, 555, 44]
+const tips = [calcTip([bills[0]]), calcTip([bills[1]]), calcTip([bills[2]])]
+
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
+
+
+console.log(bills, tips, totals)
+
+
+
+
+
+
+
+
+
+
+
+
+// function calcTip(bill) {
+//     return bill >= 50 && bill <= 300 ? bill > 300 * 15 / 100 : bill * 20 / 100;
+// }
+
+// const bills = [125, 555, 44]
+
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+
+// console.log(bills, tips)
+
 
 
 
