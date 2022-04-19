@@ -1,5 +1,5 @@
 "use strict";
-/*Strict Mode Lecture
+/*Strict Mode Lecture*/
 
 //Always enable strict mode going forward
 
@@ -175,7 +175,7 @@ console.log("", scoreDolphins, '\n', scoreKoalas);
 
 function checkWinner(dolphinsAverage, koalasAverage) {
     if (koalasAverage > 2 * dolphinsAverage)
-        console.logI(`Koalas win (${koalasAverage} vs ${dolphinsAverage})`)
+        console.log(`Koalas win (${koalasAverage} vs ${dolphinsAverage})`)
     else if (dolphinsAverage > 2 * koalasAverage)
         console.log(`Dolphins win (${dolphinsAverage} vs ${koalasAverage})`)
     else console.log(`No one wins`)
@@ -307,7 +307,7 @@ const zidane = {
 
 
 console.log(zidane)
-*/
+
 
 
 const zidane = {
@@ -353,10 +353,98 @@ console.log(`${zidane.firstName} has ${zidane.friends.length} friends, and his b
 
 
 
+const zidane = {
+    firstName: "Zidane",
+    lastName: "Innis",
+    birthYear: 2001,
+    job: "programmer",
+    friends: ["Michael", "Peter", "Steven"],
+    hasDriversLicense: false,
+
+    // calcAge: function (birthYear) {
+    //     return 2037 - birthYear;
+    // }
+
+    // calcAge: function () {
+    //     // console.log(this)
+    //     return 2037 - this.birthYear;
+    // }
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} year old ${zidane.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
 
 
 
 
+
+    }
+
+};
+
+console.log(zidane.calcAge())
+
+console.log(zidane.age)
+console.log(zidane.age)
+console.log(zidane.age)
+
+
+//Challenge
+console.log(zidane.getSummary())
+
+
+
+const mark = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+
+
+
+
+    calcBMI: function () {
+        this.BMI = this.mass / this.height ** 2
+        return this.BMI
+
+    }
+
+}
+
+
+const john = {
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+
+
+
+
+    calcBMI: function () {
+        this.BMI = this.mass / this.height ** 2
+        return this.BMI
+    }
+
+}
+
+// SO after many trials and error I realized I must run these methods below first in order to log them by their property name(mark.BMI) in the console 
+
+mark.calcBMI()
+john.calcBMI()
+/* if these aren't run first I realized the BMI values would come out as "undefined". 
+ 
+I also noticed i could put ${mark.calcBMI()} in the template literal for example and it would output the value as well.*/
+
+if (mark.BMI > john.BMI) {
+    console.log(`${mark.fullName} BMI (${mark.BMI}) is higher than ${john.fullName} BMI (${john.BMI})`)
+} else {
+    (john.BMI > mark.BMI)
+    console.log(`${john.fullName} BMI (${john.BMI}) is higher than ${mark.fullName} BMI (${mark.BMI})`)
+
+}
 
 
 
