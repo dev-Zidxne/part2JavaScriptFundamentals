@@ -509,6 +509,18 @@ for (let i = 0; i < years.length; i++) {
 console.log(ages)
 
 //continue and break
+console.log("--- ONLY STRINGS ---")
+for (let i = 0; i < zidane.length; i++) {
+    if (typeof zidane[i] !== "string") continue
+    console.log(zidane[i], typeof zidane[i]);
+}
+
+
+console.log("--- BREAK WITH NUMBER ---")
+for (let i = 0; i < zidane.length; i++) {
+    if (typeof zidane[i] === "number") break
+    console.log(zidane[i], typeof zidane[i]);
+}
 
 
 
