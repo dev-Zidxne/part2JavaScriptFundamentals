@@ -414,14 +414,10 @@ const mark = {
 
 }
 
-
 const john = {
     fullName: "John Smith",
     mass: 92,
     height: 1.95,
-
-
-
 
     calcBMI: function () {
         this.BMI = this.mass / this.height ** 2
@@ -430,13 +426,12 @@ const john = {
 
 }
 
-// SO after many trials and error I realized I must run these methods below first in order to log them by their property name(mark.BMI) in the console 
-
+// SO after many trials and error I realized I must run these methods below first in order to log them by their property name(mark.BMI) in the console
 mark.calcBMI()
 john.calcBMI()
-/* if these aren't run first I realized the BMI values would come out as "undefined". 
- 
-I also noticed i could put ${mark.calcBMI()} in the template literal for example and it would output the value as well.
+//if these aren't run first I realized the BMI values would come out as "undefined".
+
+//I also noticed i could put ${mark.calcBMI()} in the template literal for example and it would output the value as well.
 
 if (mark.BMI > john.BMI) {
     console.log(`${mark.fullName} BMI (${mark.BMI}) is higher than ${john.fullName} BMI (${john.BMI})`)
@@ -461,7 +456,7 @@ if (mark.BMI > john.BMI) {
 // console.log("Lifting weights repetition 9")
 // console.log("Lifting weights repetition 10")
 
-*/
+
 
 //Iteration: The For Loop
 
@@ -470,6 +465,70 @@ if (mark.BMI > john.BMI) {
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep}`)
 }
+
+//Looping Arrays, Breaking and Continuing
+
+*/
+
+
+const zidane = [
+    "Zidane",
+    "Innis",
+    2037 - 2001,
+    " programmer",
+    ["Michael", "Peter", "Steven"],
+    true
+
+];
+
+const types = [];
+
+// console.log(zidane[0])
+// console.log(zidane[1])
+// ...
+// console.log(zidane[4])
+// zidane[5] does not exist
+
+for (let i = 0; i < zidane.length; i++) {
+    console.log(zidane[i], typeof zidane[i]);
+
+    //Filling Types Array
+    //types[i] = typeof zidane[i]
+    types.push(typeof zidane[i])
+}
+
+console.log(types);
+
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages)
+
+//continue and break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
