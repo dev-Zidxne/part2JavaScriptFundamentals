@@ -1,5 +1,5 @@
 "use strict";
-/*Strict Mode Lecture*/
+/*Strict Mode Lecture
 
 //Always enable strict mode going forward
 
@@ -351,7 +351,7 @@ console.log(zidane);
 
 console.log(`${zidane.firstName} has ${zidane.friends.length} friends, and his best friend is called ${zidane.friends[0]}`)
 
-
+//Object Methods
 
 const zidane = {
     firstName: "Zidane",
@@ -436,7 +436,7 @@ mark.calcBMI()
 john.calcBMI()
 /* if these aren't run first I realized the BMI values would come out as "undefined". 
  
-I also noticed i could put ${mark.calcBMI()} in the template literal for example and it would output the value as well.*/
+I also noticed i could put ${mark.calcBMI()} in the template literal for example and it would output the value as well.
 
 if (mark.BMI > john.BMI) {
     console.log(`${mark.fullName} BMI (${mark.BMI}) is higher than ${john.fullName} BMI (${john.BMI})`)
@@ -447,6 +447,29 @@ if (mark.BMI > john.BMI) {
 }
 
 
+
+
+
+// console.log("Lifting weights repetition 1")
+// console.log("Lifting weights repetition 2")
+// console.log("Lifting weights repetition 3")
+// console.log("Lifting weights repetition 4")
+// console.log("Lifting weights repetition 5")
+// console.log("Lifting weights repetition 6")
+// console.log("Lifting weights repetition 7")
+// console.log("Lifting weights repetition 8")
+// console.log("Lifting weights repetition 9")
+// console.log("Lifting weights repetition 10")
+
+*/
+
+//Iteration: The For Loop
+
+
+//for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}`)
+}
 
 
 

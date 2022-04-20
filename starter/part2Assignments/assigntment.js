@@ -125,9 +125,9 @@
 // ]
 // console.log(percentages)
 
-// /*LECTURE: Introduction to Objects
+/*LECTURE: Introduction to Objects
 
-// /1. Create an object called 'myCountry' for a country of your choice, containingproperties 'country', 'capital', 'language', 'population' and'neighbours' (an array like we used in previous assignments)*/
+/1. Create an object called 'myCountry' for a country of your choice, containingproperties 'country', 'capital', 'language', 'population' and'neighbours' (an array like we used in previous assignments)*/
 
 // // # 1--------------------------->
 
@@ -140,15 +140,15 @@
 
 // }
 
-// // LECTURE: Dot vs. Bracket Notation
+// LECTURE: Dot vs. Bracket Notation
 
-// /*1. Using the object from the previous assignment, log a string like this to the
-// console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries
-// and a capital called Helsinki.'
-// 2. Increase the country's population by two million using dot notation, and then
-// decrease it by two million using brackets notation.*/
+/*1. Using the object from the previous assignment, log a string like this to the
+console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries
+and a capital called Helsinki.'
+2. Increase the country's population by two million using dot notation, and then
+decrease it by two million using brackets notation.*/
 
-// // # 1----------------->
+// # 1----------------->
 // console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`)
 
 // // # 2----------------->
@@ -156,6 +156,63 @@
 // console.log(myCountry.population += 2)
 
 // console.log(myCountry['population'] - 2)
+
+
+//LECTURE: Object Methods
+
+/* 1. Add a method called 'describe' to the 'myCountry' object. This method
+will log a string to the console, similar to the string logged in the previous
+assignment, but this time using the 'this' keyword.
+2. Call the 'describe' method
+3. Add a method called 'checkIsland' to the 'myCountry' object. This
+method will set a new property on the object, called 'isIsland'.
+'isIsland' will be true if there are no neighbouring countries, and false if
+there are. Use the ternary operator to set the property.*/
+
+
+//# 1------------------>
+// const myCountry = {
+//     country: "Jamaica",
+//     capital: "Kingston",
+//     language: "english",
+//     population: 3,
+//     neighbours: ["Cuba", "Haiti", "Puerto Rico"],
+//     describe: function () {
+//         console.log(
+//             `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`)
+
+//     },
+//     checkIsland: function () {
+//         this.isIsland = this.neighbours.length === 0 ? true : false;
+
+//     }
+
+
+// }
+
+
+// myCountry.checkIsland()
+
+// console.log(myCountry.isIsland)
+
+/*LECTURE: Iteration: The for Loop
+1. There are elections in your country! In a small town, there are only 50 voters.
+Use a for loop to simulate the 50 people voting, by logging a string like this to
+the console (for numbers 1 to 50): 'Voter number 1 is currently voting'  */
+
+// for (let voter = 1; voter <= 50; voter++) {
+//     console.log(`Voter ${voter} is currently voting`)
+// }
+
+
+
+
+
+
+
+
+
+
 
 
 
