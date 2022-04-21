@@ -59,9 +59,9 @@
 
 
 
-const percentageOfWorld1 = function (population) {
-    return (population / 7900 * 100)
-}
+// const percentageOfWorld1 = function (population) {
+//     return (population / 7900 * 100)
+// }
 // const percentage1 = percentageOfWorld1(3)
 
 // const percentage2 = percentageOfWorld1(300)
@@ -126,7 +126,7 @@ const percentageOfWorld1 = function (population) {
 // console.log(percentages)
 
 /*LECTURE: Introduction to Objects
- 
+
 /1. Create an object called 'myCountry' for a country of your choice, containingproperties 'country', 'capital', 'language', 'population' and'neighbours' (an array like we used in previous assignments)*/
 
 // // # 1--------------------------->
@@ -214,21 +214,21 @@ function 'percentageOfWorld1' that you created earlier
 and reflect on how much better this solution is*/
 
 
-// #1
+// // #1
 
-const populations = [3, 300, 1000, 200]
+// const populations = [3, 300, 1000, 200]
 
-// #2
+// // #2
 
 
-const percentages2 = []
+// const percentages2 = []
 
-for (let i = 0; i < populations.length; i++) {
-    const perc = percentageOfWorld1(populations[i])
-    percentages2.push(perc);
+// for (let i = 0; i < populations.length; i++) {
+//     const perc = percentageOfWorld1(populations[i])
+//     percentages2.push(perc);
 
-}
-console.log(percentages2)
+// }
+// console.log(percentages2)
 
 
 
