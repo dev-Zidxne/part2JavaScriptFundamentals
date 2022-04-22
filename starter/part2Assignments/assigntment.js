@@ -59,9 +59,9 @@
 
 
 
-// const percentageOfWorld1 = function (population) {
-//     return (population / 7900 * 100)
-// }
+const percentageOfWorld1 = function (population) {
+    return (population / 7900 * 100)
+}
 // const percentage1 = percentageOfWorld1(3)
 
 // const percentage2 = percentageOfWorld1(300)
@@ -230,20 +230,37 @@ and reflect on how much better this solution is*/
 // }
 // console.log(percentages2)
 
+//LECTURE: Looping Backwards and Loops in Loops
+
+// let listOfNeighbours = [
+//     ['Canada', 'Mexico'],
+//     ['Spain'],
+//     ['Norway', 'Sweden', 'Russia']
+// ]
 
 
+// for (let i = 0; i < listOfNeighbours.length; i++)
+//     for (let y = 0; y < listOfNeighbours[i].length; y++)
+//         console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
 
 
+//LECTURE: The while Loop
+
+/*1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing',
+but this time using a while loop (call the array 'percentages3')
+2. Reflect on what solution you like better for this task: the for loop or the while
+loop?*/
+
+// const populations = [3, 300, 1000, 200]
 
 
+// const percentages3 = []
 
+// let i = 0;
 
-
-
-
-
-
-
-
-
-
+// while (i < populations.length) {
+//     const perc = percentageOfWorld1(populations[i])
+//     percentages3.push(perc);
+//     i++
+// }
+// console.log(percentages3)        
